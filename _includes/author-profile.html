@@ -246,6 +246,14 @@
         </li>
       {% endif %}
 
+      {% if author.zoom %}
+        <li>
+          <a href="https://zoom.us/{{ author.zoom }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-zoom" aria-hidden="true"></i><span class="label">Zoom</span>
+          </a>
+        </li>
+      {% endif %}
+      
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
